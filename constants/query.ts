@@ -1,0 +1,4 @@
+export enum QueryKeys {
+	GET_ALL_QUESTS = 'GET_ALL_QUESTS',
+	GET_QUESTS_BY_ID = 'GET_QUESTS_BY_ID'
+}
