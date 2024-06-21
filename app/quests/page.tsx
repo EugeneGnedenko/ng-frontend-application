@@ -17,7 +17,7 @@ export default function Page() {
 				{quests.isSuccess ? (
 					<Quests>
 						{quests.data?.map((item: IQuest) => (
-							<QuestItem data={item} onClick={() => onClick(item.slug)} />
+							<QuestItem data={item} onClick={() => onClick(item.slug)} key={item.slug} />
 						))}
 					</Quests>
 				) : (

@@ -27,7 +27,7 @@ const Header: FC = () => {
 				</ValueContainer>
 
 				<ImageWrapper>
-					<Image src={'/assets/avatar.png'} />
+					<Image src={'/assets/avatar.png'} alt="Avatar" />
 				</ImageWrapper>
 			</UserInfoContainer>
 		</Container>

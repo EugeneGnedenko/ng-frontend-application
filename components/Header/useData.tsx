@@ -1,4 +1,4 @@
-import { expReward, goldReward, rewardsAtom } from '@/atoms/rewards-atom';
+import { rewardsAtom } from '@/atoms/rewards-atom';
 import { useAtomValue } from 'jotai';
 
 export const useData = () => {

@@ -33,7 +33,7 @@ const QuestItem: FC<Props> = ({ data, onClick }) => {
 	return (
 		<Container onClick={onClick}>
 			<ImageWrapper>
-				<Image src={data.cover} />
+				<Image src={data.cover} alt='cover image' />
 			</ImageWrapper>
 			<Content>
 				<Block>
@@ -49,7 +49,7 @@ const QuestItem: FC<Props> = ({ data, onClick }) => {
 							{swordArray.map((_, index) => {
 								const isActive = index <= data.difficulty;
 								return (
-									<Difficulty isActive={isActive}>
+									<Difficulty isActive={isActive} key={index}>
 										<SwordIcon />
 									</Difficulty>
 								);

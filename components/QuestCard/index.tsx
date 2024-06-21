@@ -40,7 +40,7 @@ const QuestCard: FC<Props> = ({ data }) => {
 	return (
 		<Container>
 			<ImageWrapper>
-				<Image src={data.cover} />
+				<Image src={data.cover} alt="background" />
 			</ImageWrapper>
 
 			<Content>
@@ -58,7 +58,7 @@ const QuestCard: FC<Props> = ({ data }) => {
 								{swordArray.map((_, index) => {
 									const isActive = index <= data.difficulty;
 									return (
-										<Difficulty isActive={isActive}>
+										<Difficulty isActive={isActive} key={index}>
 											<SwordIcon />
 										</Difficulty>
 									);
